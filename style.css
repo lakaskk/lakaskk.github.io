@@ -1,5 +1,6 @@
 body {
-    background-color: #f8f9fa; /* สีพื้นหลังของหน้าเว็บ */
+    background-color: #f8f9fa;
+    /* สีพื้นหลังของหน้าเว็บ */
 }
 
 .profile-container {
@@ -7,7 +8,8 @@ body {
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
-    background-color: #fff; /* สีพื้นหลังของ container */
+    background-color: #fff;
+    /* สีพื้นหลังของ container */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -19,7 +21,8 @@ body {
 }
 
 .section-container {
-    background-color: #fff; /* สีพื้นหลังของ section */
+    background-color: #fff;
+    /* สีพื้นหลังของ section */
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
@@ -37,4 +40,44 @@ body {
 .skills img {
     max-width: 50px;
     margin: 5px;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
 }
