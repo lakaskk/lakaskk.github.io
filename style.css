@@ -1,0 +1,40 @@
+body {
+    background-color: #f8f9fa; /* สีพื้นหลังของหน้าเว็บ */
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    background-color: #fff; /* สีพื้นหลังของ container */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-img {
+    max-width: 150px;
+    margin-right: 20px;
+}
+
+.section-container {
+    background-color: #fff; /* สีพื้นหลังของ section */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    margin-bottom: 15px;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.skills img {
+    max-width: 50px;
+    margin: 5px;
+}
