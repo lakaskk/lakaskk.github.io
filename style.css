@@ -1,15 +1,12 @@
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    padding: 20px;
+    background-color: #f8f9fa;
+    padding-top: 20px;
 }
 .resume {
-    max-width: 800px;
-    margin: 0 auto;
+    background-color: white;
     padding: 20px;
-    border: 1px solid #ccc;
     border-radius: 10px;
-    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .header, .content {
     margin-bottom: 20px;
@@ -83,4 +80,8 @@ body {
 .button:hover span:after {
     opacity: 1;
     right: 0;
+}
+.center-button {
+    text-align: center;
+    margin-top: 20px;
 }
