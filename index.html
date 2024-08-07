@@ -13,56 +13,57 @@
 
 <body>
     <div class="container">
-        <div class="resume">
-
+        <div class="resume p-4">
+            <div class="center-button">
+                <label class="switch">
+                    <input type="checkbox" onclick="toggleLanguage()">
+                    <span class="slider round"></span>
+                </label>
+            </div>
             <div class="header-content">
-                <div>
-                    <img src="profile.png" alt="รูปภาพประจำตัว" class="profile-img img-thumbnail">
-                </div>
-                <div class="profile-details">
-                    <h1 class="mb-0 text-center">เอกลักษณ์ ปิ่นมณี</h1>
-                    <p class="text-muted text-center">ชื่อเล่น: โอม</p>
-                </div>
+                <img src="profile.png" alt="รูปภาพประจำตัว" class="profile-img img-thumbnail">
+                <h1 class="mb-0 text-center" id="name">เอกลักษณ์ ปิ่นมณี</h1>
+                <p class="text-muted text-center" id="nickname">ชื่อเล่น: โอม</p>
             </div>
-            <div class="section-title">ประวัติส่วนตัว</div>
-            <div class="row">
+    
+            <div class="section-title" id="personal-info-title">ประวัติส่วนตัว</div>
+            <div class="row" id="personal-info">
                 <div class="col-md-6">
-                    <p><strong>อายุ: </strong>25 ปี</p>
-                    <p><strong>วันเกิด: </strong>29 กรกฎาคม 1999</p>
+                    <p id="age"><strong>อายุ:</strong> 25 ปี</p>
+                    <p><strong>วันเกิด:</strong> 29 กรกฎาคม 1999</p>
                 </div>
                 <div class="col-md-6">
-                    <p><strong>น้ำหนัก: </strong>70 กก.</p>
-                    <p><strong>ส่วนสูง: </strong>176 ซม</p>
+                    <p><strong>น้ำหนัก:</strong> 70 กิโลกรัม</p>
+                    <p><strong>ส่วนสูง:</strong> 176 ซม.</p>
                 </div>
             </div>
-            <div class="section-title">ช่องทางการติดต่อ</div>
-            <ul class="list-unstyled">
+    
+            <div class="section-title" id="contact-title">ช่องทางการติดต่อ</div>
+            <ul class="list-unstyled" id="contact-info">
                 <li><strong>เบอร์โทร:</strong> 092-394-5987</li>
                 <li><strong>Email:</strong> aekkalak.pinm@gmail.com</li>
                 <li><strong>ที่อยู่:</strong> 15/53 ซอย 49 หมู่ 8 ตำบลลำโพ อำเภอบางบัวทอง จังหวัดนนทบุรี 11110</li>
             </ul>
-
-            <div class="section-title">เป้าหมายในการทำงาน</div>
-            <p>หลังจากเรียนจบสาขาคอมพิวเตอร์ธุรกิจ มีเป้าหมายในการทำงานตามทักษะที่ได้เรียนมา
-                ตั้งแต่การเขียนโปรแกรมบนเว็บ ไปใช้ในการทำงาน และอยากพัฒนาฝีมือด้านการเขียนเว็บไซต์ในอนาคต</p>
-
-            <div class="section-title">การศึกษา</div>
-            <p>มหาวิทยาลัยราชภัฏสวนสุนันทา (2018 - 2024) ปริญญาตรี สาขาคอมพิวเตอร์ธุรกิจ</p>
-
-            <div class="section-title">ทักษะความสามารถ</div>
-            <ul>
+    
+            <div class="section-title" id="goal-title">เป้าหมายในการทำงาน</div>
+            <p id="goal-text">หลังจากเรียนจบสาขาคอมพิวเตอร์ธุรกิจ มีเป้าหมายในการทำงานตามทักษะที่ได้เรียนมา ตั้งแต่การเขียนโปรแกรมบนเว็บ ไปใช้ในการทำงาน และอยากพัฒนาฝีมือด้านการเขียนเว็บไซต์ในอนาคต</p>
+    
+            <div class="section-title" id="education-title">การศึกษา</div>
+            <p id="education-text">มหาวิทยาลัยราชภัฏสวนสุนันทา (2018 - 2024) ปริญญาตรี สาขาคอมพิวเตอร์ธุรกิจ</p>
+    
+            <div class="section-title" id="skills-title">ทักษะความสามารถ</div>
+            <ul id="skills-list">
                 <li>เขียน HTML/CSS/JavaScript ได้เบื้องต้น</li>
                 <li>ใช้ Microsoft Office ได้</li>
                 <li>ภาษาอังกฤษ สามารถอ่านและฟังได้เข้าใจ</li>
                 <li>สามารถแก้ปัญหา/ซ่อมคอมพิวเตอร์ได้</li>
             </ul>
-            <div class="section-title">ประวัติการทำงาน</div>
-            <p>2024(4 เดือน) นักศึกษาฝึกงาน บริษัท มิราเคิล ไลฟ์ โค้ช จำกัด - ฝึกงานตัดต่อวิดีโอ ทำสคริปต์วิดีโอ</p>
-            <div class="center-button">
-                <button type="button" class="button" style="vertical-align:middle" onclick="location.href='./cv.html'"><span>English</span></button>
-            </div>
+    
+            <div class="section-title" id="work-title">ประวัติการทำงาน</div>
+            <p id="work-text">2024 นักศึกษาฝึกงาน บริษัท มิราเคิล ไลฟ์ โค้ช จำกัด - ฝึกงานตัดต่อวิดีโอ ทำสคริปต์วิดีโอ</p>
         </div>
     </div>
+    <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
