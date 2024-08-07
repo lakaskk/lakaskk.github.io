@@ -4,27 +4,33 @@ function toggleLanguage() {
             name: "เอกลักษณ์ ปิ่นมณี",
             nickname: "ชื่อเล่น: โอม",
             personalInfoTitle: "ประวัติส่วนตัว",
-            age: "<strong>อายุ:</strong> 25 ปี",
             contactTitle: "ช่องทางการติดต่อ",
             goalTitle: "เป้าหมายในการทำงาน",
             educationTitle: "การศึกษา",
             skillsTitle: "ทักษะความสามารถ",
             workTitle: "ประวัติการทำงาน",
             goalText: "หลังจากเรียนจบสาขาคอมพิวเตอร์ธุรกิจ มีเป้าหมายในการทำงานตามทักษะที่ได้เรียนมา ตั้งแต่การเขียนโปรแกรมบนเว็บ ไปใช้ในการทำงาน และอยากพัฒนาฝีมือด้านการเขียนเว็บไซต์ในอนาคต",
-            educationText: "มหาวิทยาลัยราชภัฏสวนสุนันทา (2018 - 2024) ปริญญาตรี สาขาคอมพิวเตอร์ธุรกิจ",
+            educationText: "มหาวิทยาลัยราชภัฏสวนสุนันทา (2561 - 2567) ปริญญาตรี สาขาคอมพิวเตอร์ธุรกิจ",
             skillsList: [
                 "เขียน HTML/CSS/JavaScript ได้เบื้องต้น",
                 "ใช้ Microsoft Office ได้",
                 "ภาษาอังกฤษ สามารถอ่านและฟังได้เข้าใจ",
                 "สามารถแก้ปัญหา/ซ่อมคอมพิวเตอร์ได้"
             ],
-            workText: "2024 นักศึกษาฝึกงาน บริษัท มีราคัลโอสโฟ้ จำกัด - ฝึกงานตัดต่อวิดีโอ ทำคลิปรีวิววิดีโอ"
+            workText: "2567 นักศึกษาฝึกงาน บริษัท มิราเคิล ไลฟ์ โค้ช จำกัด - ฝึกงานตัดต่อวิดีโอ ทำสคริปต์วิดีโอ",
+            age: "อายุ: 25 ปี",
+            birthdate: "วันเกิด: 29 กรกฎาคม 2542",
+            weight: "น้ำหนัก: 70 กิโลกรัม",
+            height: "ส่วนสูง: 176 ซม.",
+            phone: "เบอร์โทร: 092-394-5987",
+            email: "Email: aekkalak.pinm@gmail.com",
+            address: "ที่อยู่: 15/53 ซอย 49 หมู่ 8 ตำบลลำโพ อำเภอบางบัวทอง จังหวัดนนทบุรี 11110"
+
         },
         en: {
-            name: "Ekkalak Pinmanee",
+            name: "Aekkalak Pinmanee",
             nickname: "Nickname: Ohm",
             personalInfoTitle: "Personal Information",
-            age: "<strong>Age:</strong> 25",
             contactTitle: "Contact Information",
             goalTitle: "Career Goals",
             educationTitle: "Education",
@@ -38,7 +44,14 @@ function toggleLanguage() {
                 "English: Able to read and understand",
                 "Able to troubleshoot/repair computers"
             ],
-            workText: "2024 Internship at Miracalosefo Ltd. - Video Editing, Video Review Production"
+            workText: "2024 Internship at Miracle Life Coach Ltd. - Video Editing, Video Script",
+            age: "Age: 25 years",
+            birthdate: "Birthdate: July 29, 1999",
+            weight: "Weight: 70 kg",
+            height: "Height: 176 cm",
+            phone: "Phone: 092-394-5987",
+            email: "Email: aekkalak.pinm@gmail.com",
+            address: "Address: 15/53 Soi 49, Moo 8, Lum Pho Subdistrict, Bang Bua Thong District, Nonthaburi Province, 11110"
         }
     };
 
@@ -70,4 +83,13 @@ function toggleLanguage() {
     });
 
     document.getElementById("work-text").textContent = data.workText;
+
+    document.getElementById("age").textContent = data.age;
+    document.getElementById("birthdate").textContent = data.birthdate;
+    document.getElementById("weight").textContent = data.weight;
+    document.getElementById("height").textContent = data.height;
+
+    document.getElementById("phone").textContent = data.phone;
+    document.getElementById("email").textContent = data.email;
+    document.getElementById("address").textContent = data.address;
 }
