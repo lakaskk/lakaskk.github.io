@@ -1,25 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
 body {
     background-color: #f8f9fa;
     padding-top: 20px;
+    font-family: "Kanit", sans-serif;
 }
+
 .resume {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.header, .content {
+
+.header-content {
+    display: flex;
+    align-items: center;
     margin-bottom: 20px;
 }
-.header img {
-    float: left;
-    width: 100px;
-    height: 100px;
-    margin-right: 20px;
+
+.profile-details {
+    flex-grow: 1;
+    margin-left: 20px;
 }
-.header h1 {
-    margin: 0;
-}
+
 .section-title {
     border-bottom: 2px solid #007bff;
     padding-bottom: 5px;
@@ -27,21 +31,26 @@ body {
     font-weight: bold;
     color: #007bff;
 }
+
 .info-item {
     margin-bottom: 10px;
 }
+
 .info-item label {
     font-weight: bold;
     display: inline-block;
     width: 100px;
 }
+
 .contact-info {
     list-style-type: none;
     padding: 0;
 }
+
 .contact-info li {
     margin-bottom: 5px;
 }
+
 .button {
     display: inline-block;
     border-radius: 4px;
@@ -81,6 +90,7 @@ body {
     opacity: 1;
     right: 0;
 }
+
 .center-button {
     text-align: center;
     margin-top: 20px;
