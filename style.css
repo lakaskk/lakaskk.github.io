@@ -1,43 +1,46 @@
 body {
-    background-color: #f8f9fa;
-    /* สีพื้นหลังของหน้าเว็บ */
-}
-
-.profile-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 30px;
-    background-color: #fff;
-    /* สีพื้นหลังของ container */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-.profile-img {
-    max-width: 150px;
+.resume {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+.header, .content {
+    margin-bottom: 20px;
+}
+.header img {
+    float: left;
+    width: 100px;
+    height: 100px;
     margin-right: 20px;
 }
-
-.section-container {
-    background-color: #fff;
-    /* สีพื้นหลังของ section */
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.header h1 {
+    margin: 0;
 }
-
 .section-title {
-    margin-bottom: 15px;
+    font-weight: bold;
+    border-bottom: 2px solid #000;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
 }
-
-.container {
-    margin-top: 20px;
+.info-item {
+    margin-bottom: 10px;
 }
-
-.skills img {
-    max-width: 50px;
-    margin: 5px;
+.info-item label {
+    font-weight: bold;
+    display: inline-block;
+    width: 100px;
+}
+.contact-info {
+    list-style-type: none;
+    padding: 0;
+}
+.contact-info li {
+    margin-bottom: 5px;
 }
